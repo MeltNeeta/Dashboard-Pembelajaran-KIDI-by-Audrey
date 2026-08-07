@@ -1,0 +1,49 @@
+:root {
+    --black: #031927;
+    --red: #ba1200;
+    --white: #ffffff;
+    --l-blue: #c8e0f4;
+    --blue: #9dd1f1;
+    --d-blue: #508aa8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    background-color: var(--red);
+    font-family: "League Gothic", sans-serif;
+    justify-self: center;
+    gap: 150px;
+    position: fixed;
+}
+
+.title-nav {
+    color: var(--blue);
+    font-size: 1rem;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--blue);
+    padding: 10px;
+    line-height: normal;
+    font-size: 0.75rem;
+    align-self: center;
+    color: var(--red);
+    border-radius: 20px;
+}
