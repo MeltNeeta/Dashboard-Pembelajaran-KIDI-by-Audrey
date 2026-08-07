@@ -34,11 +34,35 @@
         <div class="group">
             
             <div class="card1">
-                <div class="title"></div>
+                <div class="title">Change HTML Attribute</div>
                 <div class="main">
-                    <img id="no-color" src=""/>
-                    <div class="button">
-                        <button onclick=""
+                    <img id="no-color" src="pict/no color.jpeg"/>
+                    <div class="button-v">
+                        <button onclick="document.getElementById('no-color').src ='pict/color.jpeg'">Color</button>
+                        <button onclick="document.getElementById('no-color').src ='pict/no color.jpeg'">No Color</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card2">
+                <div class="title">Change HTML Content</div>
+                <div class="main">
+                    <p id="demo">I will change! >:3</p>
+                    <div class="button-h">
+                        <button type="button" onclick='document.getElementById("demo").innerHTML="I AM changed! ヾ(≧▽≦*)o"'>Click Me</button>
+                        <button type="button" onclick='document.getElementById("demo").innerHTML="I will change! >:3"'>Go Back</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card3">
+                <div class="title">Change HTML Style</div>
+                <div class="main">
+                    <p id="demo2">(●'◡'●)</p>
+                    <div class="button-h">
+                        <button type="button" onclick='document.getElementById("demo2").style.color="#f696b3"'>Pink</button>
+                        <button type="button" onclick='document.getElementById("demo2").style.color="#dd1440"'>Red</button>
+                        <button type="button" onclick='document.getElementById("demo2").style.color="#5a4864"'>Black</button>
                     </div>
                 </div>
             </div>
