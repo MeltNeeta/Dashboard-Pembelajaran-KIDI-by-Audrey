@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akt:wght@100..900&family=Amatic+SC:wght@400;700&family=Arimo:ital,wght@0,400..700;1,400..700&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Black+Ops+One&family=Jersey+10+Charted&family=League+Gothic:wdth@75..100&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 </head>
 <body>
     
@@ -31,6 +32,7 @@
 
     <div class="cards">
 
+        <!-- baris 1 -->
         <div class="group">
             
             <div class="card">
@@ -68,8 +70,101 @@
             </div>
 
         </div>
+
+        <!-- baris 2 -->
+        <div class="group">
+            
+            <div class="card">
+                <div class="title">Showing & Hiding Element</div>
+                <div class="main2">
+                    <p id="demo3">I will DISSAPPEAR (～￣▽￣)～</p>
+                    <div class="button-h">
+                        <button class="after" type="button" onclick='document.getElementById("demo3").style.display="none"'>Bye</button>
+                        <button class="before" type="button" onclick='document.getElementById("demo3").style.display="block"'>Hello</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="title">Applying Computation</div>
+                <div class="main4">
+                    <div class="calculator-menu">
+                        <!-- plus -->
+                        <button onclick="document.getElementById('plus').style.display='block'
+                        document.getElementById('minus').style.display='none'
+                        document.getElementById('times').style.display='none'
+                        document.getElementById('div').style.display='none'">+</button>
+                        <!-- minus -->
+                        <button onclick="document.getElementById('plus').style.display='none'
+                        document.getElementById('minus').style.display='block'
+                        document.getElementById('times').style.display='none'
+                        document.getElementById('div').style.display='none'">-</button>
+                        <!-- times -->
+                        <button onclick="document.getElementById('plus').style.display='none'
+                        document.getElementById('minus').style.display='none'
+                        document.getElementById('times').style.display='block'
+                        document.getElementById('div').style.display='none'">×</button>
+                        <!-- div -->
+                        <button onclick="document.getElementById('plus').style.display='none'
+                        document.getElementById('minus').style.display='none'
+                        document.getElementById('times').style.display='none'
+                        document.getElementById('div').style.display='block'">÷</button>
+                    </div>
+                    <div class="operation">
+                        <div class="plus" id="plus">
+                            <table>
+                                <tr>
+                                    <td><input id="plus-1" type="text" oninput="calculatePlus()"/></td>
+                                    <td>+</td>
+                                    <td><input id="plus-2" type="text" oninput="calculatePlus()"/></td>
+                                    <td>=</td>
+                                    <td><input id="result-plus"/></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="minus" id="minus" style="display: none;">
+                            <table>
+                                <tr>
+                                    <td><input id="minus-1" type="text" oninput="calculateMinus()"/></td>
+                                    <td>-</td>
+                                    <td><input id="minus-2" type="text" oninput="calculateMinus()"/></td>
+                                    <td>=</td>
+                                    <td><input id="result-minus"/></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="times" id="times" style="display: none;">
+                            <table>
+                                <tr>
+                                    <td><input id="times-1" type="text" oninput="calculateMinus()"/></td>
+                                    <td>×</td>
+                                    <td><input id="times-2" type="text" oninput="calculateMinus()"/></td>
+                                    <td>=</td>
+                                    <td><input id="result-times"/></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="div" id="div" style="display: none;">
+                            <table>
+                                <tr>
+                                    <td><input id="div-1" type="text" oninput="calculateDiv()"/></td>
+                                    <td>÷</td>
+                                    <td><input id="div-2" type="text" oninput="calculateDiv()"/></td>
+                                    <td>=</td>
+                                    <td><input id="result-div"/></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
     
     </div>
+
 </div>
 
 </body>
