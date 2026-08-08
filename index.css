@@ -181,3 +181,48 @@ button:hover {
     box-shadow: 0px 0px 0px 1px var(--red);
     background-color: var(--black);
 }
+
+.main2 p {
+    color: var(--gray);
+    width: 300px;
+    height: 50px;
+    background-color: var(--white);
+    text-align: center;
+    align-content: center;
+    border-radius: 20px;
+}
+.main2 .button-h .after {
+    color: var(--red);
+    box-shadow: 0px 0px 0px 1px var(--red);
+    background-color: var(--black);
+}
+.main2 .button-h .before {
+    color: var(--maroon);
+    box-shadow: 0px 0px 0px 1px var(--pink);
+    background-color: var(--pink);
+}
+
+.main3 p {
+    color: var(--black);
+    width: 300px;
+    height: 50px;
+    background-color: var(--white);
+    text-align: center;
+    align-content: center;
+    border-radius: 20px;
+}
+.main3 .button-h .pink {
+    color: var(--maroon);
+    box-shadow: 0px 0px 0px 1px var(--pink);
+    background-color: var(--pink);
+}
+.main3 .button-h .red {
+    color: var(--white);
+    box-shadow: 0px 0px 0px 1px var(--red);
+    background-color: var(--red);
+}
+.main3 .button-h .black {
+    color: var(--gray);
+    box-shadow: 0px 0px 0px 1px var(--white);
+    background-color: var(--white);
+}
