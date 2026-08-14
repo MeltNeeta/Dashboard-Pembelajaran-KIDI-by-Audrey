@@ -151,6 +151,13 @@ body {
     gap: 10px;
     align-items: center;
 }
+.main6 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 10px;
+    align-items: center;
+}
 
 .card img {
     width: 122.5px;
@@ -298,4 +305,18 @@ button:hover {
 .main5 button {
     color: var(--pink);
     background-color: var(--gray);
+}
+
+.main6 .rangkum p {
+    max-width: 300px;
+    text-align: center;
+    color: var(--gray);
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 14px;
+}
+.main6 button {
+    color: var(--pink);
+    background-color: var(--gray);
+    margin-top: 0px;
 }
