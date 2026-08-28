@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+</head>
+<body>
+
+    <script>
+        class mobil{
+            constructor(merek, warna){
+                this.merek=merek;
+                this.warna=warna;
+            }
+
+            klakson(){
+                console.log(`mobil ${this.merek} berwarna ${this.warna} membunyikan klakson beep beep`);
+            }
+        }
+
+        let mobilA = new mobil("Toyota","Hitam");
+        let mobilB = new mobil("Sirion", "Putih");
+
+        mobilA.klakson();
+        mobilB.klakson();
+    </script>
+    
+    <h1>Making Object</h1>
+    <P>
+        1. klik kanan layar <br>
+        2. pilih inspect <br>
+        3. klik menu console 
+    </P>
+
+    <h2>Code</h2>
+    <div class="code" style="display: flex; flex-direction: column;">
+        <img src="pict/class.png" style="scale: 50%;"/>
+    </div>
+
+</body>
+</html>
