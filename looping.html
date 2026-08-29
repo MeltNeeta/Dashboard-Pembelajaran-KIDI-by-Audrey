@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping</title>
+</head>
+<body>
+
+    <script>
+        console.log("---DAFTAR SEPATU (FOR ... OF)---");
+        let sepatuList = ["Nike", "Adidas", "puma"];
+        for (let sepatu of sepatuList) {
+            console.log("Sepatu : ", sepatu);
+        }
+
+        console.log("---DETAIL PROFIL HP (FOR ... IN)---");
+        let hpDetail = {merk:"Samsung", ram:"8GB", harga:"3000000"};
+        for (let kunci in hpDetail){
+            console.log(`${kunci} ${hpDetail[kunci]}`);
+        }
+    </script>
+    
+    <h1>Looping (for ... of) & (for ... in)</h1>
+    <P>
+        1. klik kanan layar <br>
+        2. pilih inspect <br>
+        3. klik menu console 
+    </P>
+
+    <h2>Code</h2>
+    <div class="code" style="display: flex; flex-direction: column;">
+        <img src="pict/looping.png" style="scale: 50%;"/>
+    </div>
+
+</body>
+</html>
