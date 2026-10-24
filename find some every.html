@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const angka = [10, 25, 40, 50];
+
+        console.log("--- find");
+        const cariDiatas20 = angka.find((n) => n >20);
+        console.log("Find (pertama ketemu) : ", cariDiatas20);
+
+        console.log("--- some");
+        const adaAngkaGanjil = angka.some((n) => n % 2 !==0);
+        console.log("Some (cari angka ganjil) : ", adaAngkaGanjil);
+
+        console.log("--- every");
+        const semuaDiatas5 = angka.every((n) => n > 5);
+        console.log("Every (Semua >5) : ", semuaDiatas5);
+
+    
+    </script>
+
+    <button><a href="index.html">< Back</a></button>
+
+    <h1>find - some - every</h1>
+
+    <P>
+        1. klik kanan layar <br>
+        2. pilih inspect <br>
+        3. klik menu console 
+    </P>
+
+    <h2>Code</h2>
+    <div class="code" style="display: flex; flex-direction: column;">
+        <img src="pict/find some every.png" style="scale: 50%;"/>
+    </div>
+</body>
+</html>

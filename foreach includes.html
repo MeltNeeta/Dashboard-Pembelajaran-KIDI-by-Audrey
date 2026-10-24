@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        console.log("--- forEach");
+        const buah = ["Apel", "Mangga", "Pisang"];
+
+        console.log("-Perulangan Cara Lama");
+        for (let i = 0; i < buah.length; i++){
+            console.log("Cara lama : ", buah[i]);
+        }
+
+        console.log("Perulangan Cara Baru");
+        buah.forEach((item) =>{
+            console.log("Cara Baru : ", item);
+        });
+
+        console.log("--- includes");
+        const adaPisang = buah.includes("Pisang");
+        console.log("Ada pisang ?", adaPisang);
+        
+    
+    </script>
+
+    <button><a href="index.html">< Back</a></button>
+
+    <h1>forEach & includes</h1>
+
+    <P>
+        1. klik kanan layar <br>
+        2. pilih inspect <br>
+        3. klik menu console 
+    </P>
+
+    <h2>Code</h2>
+    <div class="code" style="display: flex; flex-direction: column;">
+        <img src="pict/forEach.png" style="scale: 50%;"/>
+        <img src="pict/includes.png" style="scale: 50%;"/>
+    </div>
+</body>
+</html>
