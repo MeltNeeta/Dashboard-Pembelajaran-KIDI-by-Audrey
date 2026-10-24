@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Data Objek Utama
+        const siswa ={nama: "Arez", kelas: "12 rpl"};
+        
+        // Cara Lama
+        const namaLama = siswa.nama;
+        const kelasLama = siswa.kelas;
+        console.log ("Cara Lama: ", namaLama, kelasLama);
+
+        // Cara Baru
+        const { nama, kelas } = siswa;
+        console.log( "Cara Baru: ", nama, kelas);
+    
+    </script>
+
+    <button><a href="index.html">< Back</a></button>
+
+    <h1>Destructuring</h1>
+
+    <P>
+        1. klik kanan layar <br>
+        2. pilih inspect <br>
+        3. klik menu console 
+    </P>
+
+    <h2>Code</h2>
+    <div class="code" style="display: flex; flex-direction: column;">
+        <img src="pict/destructuring.png" style="scale: 50%;"/>
+    </div>
+</body>
+</html>
